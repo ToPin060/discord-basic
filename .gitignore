@@ -1,0 +1,14 @@
+# Node generations
+node_modules/
+
+# TypeScript generations
+build/
+
+# Secret environment
+.env
+
+# VSCode generations
+.vscode
+
+# Logs
+*.log
