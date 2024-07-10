@@ -4,9 +4,9 @@
   "description": "Template for Discord Application in TypeScript",
   "main": "build/scripts/main.js",
   "scripts": {
-    "build":"tsc",
+    "build": "tsc",
     "prestart": "npm run clean && npm run build",
-    "predeploy" : "npm run clean && npm run build",
+    "predeploy": "npm run clean && npm run build",
     "start": "node build/scripts/start.js",
     "deploy": "node build/scripts/deploy.js",
     "dev:start": "nodemon",
@@ -22,8 +22,10 @@
   },
   "homepage": "https://github.com/ToPin060/BasicDiscordApp#readme",
   "keywords": [
-    "basic-app", "basic-application",
-    "discord", "discordjs",
+    "basic-app",
+    "basic-application",
+    "discord",
+    "discordjs",
     "typescript",
     "template"
   ],
@@ -34,13 +36,13 @@
   "author": "ToPin060",
   "license": "GNU GENERAL PUBLIC LICENSE V3",
   "dependencies": {
-    "discord.js": "^14.14.1",
+    "discord.js": "^14.15.3",
     "dotenv": "^16.3.1",
     "winston": "^3.11.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.2",
-    "rimraf": "^5.0.5",
+    "rimraf": "^6.0.0",
     "typescript": "^5.3.3"
   }
 }
