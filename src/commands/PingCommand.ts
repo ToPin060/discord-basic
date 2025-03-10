@@ -18,11 +18,11 @@ class PingCommand extends Command {
         interaction
         .reply({
             content:"Processing...",
-            fetchReply:true
+            withResponse:true
         })
         .then((msg) => {
             setTimeout(() => {
-                let ping = msg.createdTimestamp - interaction.createdTimestamp;
+                let ping = msg.resource.message.createdTimestamp - interaction.createdTimestamp;
                 interaction.editReply({
                     content: `Pong! Latency is ${inlineCode(`${ping}ms`)}.\nAPI Latency is ${inlineCode(`${interaction.client.ws.ping}ms`)}`
                 });
